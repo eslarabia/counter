@@ -112,7 +112,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-703px);
+  transform: translateY(-1015px);
   transition-duration: .2s;
 }
 
