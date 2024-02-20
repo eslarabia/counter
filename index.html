@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ChallengeStopWatch.css">
+  <title>Document</title>
+</head>
+
+<body oncontextmenu="return false;">
+  <div class="parent">
+    <div class="timer">
+      <div class="timeOut">
+        <div>
+          <span class="hours">00</span>
+          <p>Hours</p>
+        </div>
+        :
+        <div>
+          <span class="minutes">00</span>
+          <p>minutes</p>
+        </div>
+        :
+        <div>
+          <span class="secound">00</span>
+          <p>Secounds</p>
+        </div>
+      </div>
+      <ul class="btn-list">
+        <li><button class="Start">Start</button></li>
+        <li><button class="Stop">Stop</button></li>
+        <li><button class="Reset">Reset</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="parentTwo">
+    <div class="cards">
+      <div>
+        <ion-icon name="alert-outline"></ion-icon>
+      </div>
+      <p>Do You Sure Reset Timer!</p>
+      <button class="btn">Ok</button>
+    </div>
+  </div>
+  <script src="ChallengeStopWatch.js"></script>
+  <script>
+    document.onkeydown = function (e) {
+      if (event.keyCode == 1) {
+        return false;
+      }
+
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+      }
+    }
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
